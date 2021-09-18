@@ -1,5 +1,6 @@
 package org.sample;
 
+import org.apache.xmlbeans.impl.store.SaxonXBeansDelegate.QueryInterface;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -30,7 +31,11 @@ driver.get(url);
 
 		driver.close();
 		
+		
 	}
-	
+	private void quiteBrowser() {
+		driver.quit();
+
+	}
 	
 }
